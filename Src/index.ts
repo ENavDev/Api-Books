@@ -20,7 +20,7 @@ app.post("/",(req: Request, res: Response)=>{
 
 
 app.listen(3000, async () => {
-  const url = `mongodb://${Parameters.DATABASE_HOST}:${Parameters.DATABASE_PORT}/${Parameters.DATABASE_NAME}`;
+  const url = `${Parameters.DATABASE_HOST}`;
   await initDataBase(url);
   console.log("server running at port 3000");
 });
