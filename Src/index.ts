@@ -1,11 +1,11 @@
 import express, { Request, Response } from "express";
-import { initDataBase } from "../Src/Database/db"
+import { initDataBase } from "../src/database/db"
 import { Parameters } from "./modules/utils/constants";
 import { bookRouter } from "./modules/User";
 const app = express();
 
 app.use(express.json());
-app.use("/book", bookRouter);
+app.use("/testBook", bookRouter);
 
 
 
